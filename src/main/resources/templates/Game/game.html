@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+ <h2>este el menu de Juegos</h2>
+
+ <tr th:each="juegos :${juegos}">
+     <td th:text="${juegos.id_game}"></td>
+     <td th:text="${juegos.game_name}"></td>
+     <td th:text="${juegos.genre.genre_name}"></td>
+     <br>
+</tr>
+
+</body>
+</html>
